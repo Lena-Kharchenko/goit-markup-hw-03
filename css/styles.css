@@ -1,0 +1,311 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary--color: #4D5AE5;
+    --text-color: #434455;
+    --title-color: #2E2F42;
+    --second-text-color: #FFFFFF; 
+    --dominant-color: #F4F4FD;
+    --footer-text-color:  #E7E9FC;
+    }
+
+ h1,h2,h3,p {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+ }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    img {
+        display: block;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .list {
+        list-style: none;
+    }
+    
+    .link {
+        text-decoration: none;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    body {
+        font-family: var(--primary-font);
+        color: var(--text-color);
+    }
+
+    /* ======================================CONTAINER=================================== */
+
+    .container {
+        width: 1188px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: tomato;
+    }
+
+    /* ========================================HEADER======================================= */
+    /* ======================================COMPONENTS=====================================*/
+    .weblogo {
+        
+        color:  var(--primary--color);
+    }
+    
+    .logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    }
+    
+    .logo-footer {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dominant-color);
+    
+    }
+
+    /* ========================================================================================= */
+   
+    
+    .page-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+   }
+
+   .navigation {
+    display: flex;
+   }
+    
+   .menu {
+    display: flex;
+   }
+
+   .contact-list {
+       display: flex;
+   }
+
+   .logo {
+    margin-right: 77px;
+   }
+
+   .menu-item:not(last-child) {
+    margin-right: 40px;
+   }
+
+     
+    .menu-link {
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    }
+    .menu-link:hover,
+    .menu-link:focus {
+        color: var(--text-color);
+    }
+    
+    .contact-list {
+        margin-left: auto;
+    }
+
+
+   
+    
+    .contact-mail {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    }
+    .contact-mail:hover,
+    .contact-mail:focus {
+        color: var(--primary--color);
+    }
+
+    .contact-phone {
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    }
+    
+    .contact-phone:hover,
+    .contact-phone:focus {
+        color: var(--primary--color)
+    }
+
+
+    /* ============================================== HERO ===================================== */
+
+    .hero {
+        background-color: var(--title-color);
+    }
+    .hero-title {
+    
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    }
+    
+    .modal-btn {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--second-text-color);
+    background-color: var(--primary--color);
+    
+    }
+
+    .modal-btn:hover,
+    .modal-btn:focus {
+        background-color: var(--primary--color);
+    }
+    
+    .team {
+        background: var(--dominant-color);
+    }
+    
+    .data {
+        
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+        }
+    
+    .text {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    
+    }
+    
+    .title {
+        
+       font-weight: 500;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--title-color);
+    }
+    
+    .footer-part {
+        background-color: var(--title-color);
+    }
+    
+    .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text-color);
+    
+    }
+    
+    .btn-item-all {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--second-text-color);
+    background-color: var(--primary--color);
+    
+    }
+
+    
+    .btn-item {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary--color);
+    background: var(--dominant-color);
+    
+    }
+    
+    .btn-item:hover,
+    .btn-item:focus {
+    color: var(--second-text-color);
+     background-color: var(--primary--color);  
+    
+    }
+     /* components */
+    
+    .img-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    
+    }
+     
+    
+    .data-text {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    
+    }
+    
+    
+
+
