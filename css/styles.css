@@ -7,6 +7,8 @@
     --second-text-color: #FFFFFF; 
     --dominant-color: #F4F4FD;
     --footer-text-color:  #E7E9FC;
+    --team-img-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    --img-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
  h1,h2,h3,p {
@@ -23,6 +25,7 @@
 
     img {
         display: block;
+        max-width: 100%;
     }
 
     button {
@@ -55,7 +58,7 @@
         margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
-        
+      
     }
 
     /* ========================================HEADER======================================= */
@@ -133,6 +136,7 @@
     letter-spacing: 0.02em;
     color: var(--title-color);
     }
+
     .menu-link:hover,
     .menu-link:focus {
         color: var(--text-color);
@@ -181,7 +185,7 @@
 
     
     .hero-title {
-padding-top: 192px;
+    padding-top: 192px;
     margin-bottom: 48px;
     font-weight: 500;
     font-size: 56px;
@@ -240,7 +244,7 @@ padding-top: 192px;
     }
 
     .example-item {
-        width: calc((100%-48px)/3);
+        width: calc((100%-60px)/3);
     }
     
     .example-item:nth-child(3n) {
@@ -251,6 +255,17 @@ padding-top: 192px;
         
     
     /* =======================================================TEAM================================================== */
+    .title {
+        
+        font-weight: 500;
+         font-size: 36px;
+         line-height: 1.11;
+         text-align: center;
+         letter-spacing: 0.02em;
+         text-transform: capitalize;
+         color: var(--title-color);
+     }
+    
     .team {
         background: var(--dominant-color);
     }
@@ -261,6 +276,7 @@ padding-top: 192px;
         flex-wrap: wrap;
         background-color: #teal;
     }
+    
 
     .team-item {
 
@@ -270,22 +286,19 @@ padding-top: 192px;
         
     }
 
-    .img-name {
-    padding: 8px 16px;
-    }
     
     .data {
         text-align: center;
-        margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    
         }
     
     .text {
-
+    margin-top: 8px;
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
@@ -293,17 +306,16 @@ padding-top: 192px;
     color: var(--text-color);
     
     }
+
+ .img-content {
+    padding: 32px 16px ;
+ }
+
+ .team-article {
+    box-shadow: var(--team-img-shadow);
+ }
     
-    .title {
-        
-       font-weight: 500;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--title-color);
-    }
+    
     
 
 /*============================================================= FOOTER ========================================== */
@@ -329,7 +341,27 @@ padding-top: 192px;
         padding-top: 100px;
      margin-bottom: 16px;
     }
+
+
+    /*======================================================== PORTFOLIO ======================================= */
     
+    .page-header {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .portfolio-btn-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 92px;
+        margin-bottom: 72px;
+    }
+
+    .portfolio-btn:not(last-child) {
+        margin-right: 24px;
+    }
+
+
     .btn-item-all {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -356,8 +388,8 @@ padding-top: 192px;
     letter-spacing: 0.04em;
     color: var(--primary--color);
     background: var(--dominant-color);
-    
     }
+    
     
     .btn-item:hover,
     .btn-item:focus {
@@ -365,8 +397,32 @@ padding-top: 192px;
      background-color: var(--primary--color);  
     
     }
-     /* components */
-    
+
+    /*================================================  EXAMPLES  =================================================== */
+     
+    .img-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+       
+    }
+
+
+    .img-item {
+        width: calc((100%-60px)/3); 
+         
+
+    }
+
+    .img-item:nth-child(3n) {
+        margin-bottom: 48px;
+        
+    }
+
+    .img-item:last-child(3n){
+        margin-bottom: 0;
+    }
+
     .img-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -382,10 +438,21 @@ padding-top: 192px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--text-color)
     
     }
+
+    .img-info {
+        padding: 32px 53px 32px 16px;
+    }
+
+
+    .img-article {
+        box-shadow: var(--img-shadow);
+    }
     
+
+   
     
 
 
