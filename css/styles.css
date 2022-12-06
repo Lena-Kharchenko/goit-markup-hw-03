@@ -371,7 +371,7 @@
     .portfolio-btn-list {
         display: flex;
         justify-content: center;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
         
         
     }
@@ -398,6 +398,7 @@
     color: var(--second-text-color);
     background-color: var(--primary-color);
     border: transparent;
+    padding: 8px 16px;
     
     }
 
@@ -414,6 +415,7 @@
     color: var(--primary-color);
     background: var(--dominant-color);
     border: transparent;
+    padding: 8px 16px;
     }
     
     
