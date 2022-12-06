@@ -25,7 +25,7 @@
 
     img {
         display: block;
-        max-width: 100%;
+        
     }
 
     button {
@@ -42,7 +42,7 @@
 
     .section {
         padding-top: 120px;
-        padding-bottom: 120px;
+        
     }
     
     body {
@@ -261,7 +261,11 @@
         margin-right: 0;
     }
 
-    
+    .activity-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        
+    }
 
         
     
@@ -279,6 +283,7 @@
     
     .team {
         background: var(--dominant-color);
+        padding-bottom: 120px;
     }
 
     .team-list {
@@ -336,7 +341,7 @@
 
     padding-top: 100px;
     padding-bottom: 100px;
-        background-color: var(--title-color);
+    background-color: var(--title-color);
     }
     
     .footer-text {
@@ -359,13 +364,14 @@
     /*======================================================== PORTFOLIO ======================================= */
     
     .main-header {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
 
     .portfolio-btn-list {
         display: flex;
         justify-content: center;
+        padding-bottom: 72px;
         
         
     }
@@ -374,9 +380,10 @@
         margin-right: 24px;
     }
 
-    .btn-section{
+    .btn-img-section{
         padding-top: 96px;
-        padding-bottom: 72px;
+        padding-bottom: 120px;
+        
     }
 
     .btn-item-all {
@@ -431,7 +438,13 @@
     }
     
     .img-item{
-        width: calc((100%-48px)/3);
+        width: calc((100% - 48px) /3);
+        
+    }
+
+
+    .img-item:not(:nth-child(3n)) {
+        margin-right: 24px;
     }
    
     
@@ -464,7 +477,9 @@
 
     .img-info {
         
-        padding: 32px 53px 32px 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
         border-right: 0.5px solid #F4F4FD;
         border-left: 0.5px solid #F4F4FD;
         border-bottom: 0.5px solid #F4F4FD;
